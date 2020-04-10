@@ -15,13 +15,23 @@
   </head>
   <!-- head tag: user 화면에 미출력, browser에게 웹사이트에 관한 필요 정보를 제공하는 기능 -->
   <body>
-    <h1>This is my big title</h1>
-    <header>This is an important header</header>
-    <!-- header, section, article 등 유사 태그가 있음. 주로 header 사용 -->
-    <div>Whatever</div>
-    <!-- 묶어서 표현할 필요가 있는 경우에 사용 (컨테이너 역할) -->
-    <span>something else</span>
-    <!-- 텍스트를 위한 컨테이너 (구성요소: title, p 태그 등) -->
+    <section>
+      <header id="HeaderNumberOne" class="defaultHeader">
+        <!-- header, section, article 등 유사 태그가 있음. 주로 header 사용 -->
+        <!-- header를 구분해야 추후 CSS에서 명확하게 작업 가능. Id와 Class로 구분지음 -->
+        <!-- 고유한 element를 사용할 때 id 부여. 예컨대, 여권번호-->
+        <!-- 반복되는 element는 class 부여. 예컨대, 국적 -->
+        <h1>This is my big title</h1>
+      </header>
+    </section>
+
+    <div>
+      <header id="differentHeader" , class="dafaultHeader">
+        This is the unknown container
+      </header>
+    </div>
+    <!-- div는 묶어서 표현할 필요가 있는 경우에 사용 (컨테이너 역할) -->
+    <!-- span은 텍스트를 위한 컨테이너 (구성요소: title, p 태그 등) -->
     <h6>This is my small title</h6>
   </body>
   <!-- h number: user 화면에 출력, user가 읽는 content를 포함 -->
